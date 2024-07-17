@@ -1,51 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <link rel="stylesheet" href="./styles.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <!-- Navbar -->
     <header>
       <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="navbar">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Home Section -->
-    <section id="home">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Hello! I'm Hamza Zighni, a passionate developer.</p>
+    <section id="home" class="section">
+      <h1 class="section-title">Welcome to My Portfolio</h1>
+      <p class="section-description">
+        Hello! I'm Hamza Zighni, a passionate developer.
+      </p>
     </section>
 
     <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>This is a section where you can introduce yourself.</p>
-
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-description">
+        This is a section where you can introduce yourself.
+      </p>
       <img
         src="https://www.marketing91.com/wp-content/uploads/2019/02/About-section-on-Facebook-1.jpg"
         alt="the mission"
+        class="section-image"
       />
     </section>
 
     <!-- Work Section -->
-    <section id="work">
-      <h2>My Work</h2>
-      <ul>
-        <li>
+    <section id="work" class="section">
+      <h2 class="section-title">My Work</h2>
+      <ul class="work-list">
+        <li class="work-item">
           <a
             href="https://www.shemmassianconsulting.com/blog/amcas-work-and-activities"
+            class="work-link"
             >Mission 1</a
           >
         </li>
-        <li>
-          <a href="https://www.designingbuildings.co.uk/wiki/Work_section"
+        <li class="work-item">
+          <a
+            href="https://www.designingbuildings.co.uk/wiki/Work_section"
+            class="work-link"
             >Mission 2</a
           >
         </li>
@@ -53,9 +61,9 @@
     </section>
 
     <!-- Resume Section -->
-    <section id="resume">
-      <h2>Resume</h2>
-      <table border="1">
+    <section id="resume" class="section">
+      <h2 class="section-title">Resume</h2>
+      <table class="resume-table">
         <tr>
           <th>Period</th>
           <th>Position</th>
@@ -85,22 +93,42 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form action="mailto:your-email@example.com" method="post">
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Me</h2>
+      <form
+        action="mailto:your-email@example.com"
+        method="post"
+        class="contact-form"
+      >
         <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" /><br /><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="form-input"
+        /><br /><br />
         <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" /><br /><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-input"
+        /><br /><br />
         <label for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="4" cols="50"></textarea
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          class="form-textarea"
+        ></textarea
         ><br /><br />
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" class="form-submit" />
       </form>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <p>&copy; 2024 Hamza. All rights reserved.</p>
     </footer>
   </body>
